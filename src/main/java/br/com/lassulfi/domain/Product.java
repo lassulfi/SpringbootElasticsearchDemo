@@ -9,18 +9,18 @@ public class Product {
 	@Id
 	private String productId;
 	private String description;
-	private String manufacture;
+	private String manufacturer;
 	private Double price;
 			
 	public Product() {
 		super();
 	}
 
-	public Product(String productId, String description, String manufacture, Double price) {
+	public Product(String productId, String description, String manufacturer, Double price) {
 		super();
 		this.productId = productId;
 		this.description = description;
-		this.manufacture = manufacture;
+		this.manufacturer = manufacturer;
 		this.price = price;
 	}
 
@@ -45,13 +45,13 @@ public class Product {
 	}
 
 
-	public String getManufacture() {
-		return manufacture;
+	public String getManufacturer() {
+		return manufacturer;
 	}
 
 
-	public void setManufacture(String manufacture) {
-		this.manufacture = manufacture;
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
 	}
 
 	public Double getPrice() {
@@ -71,7 +71,7 @@ public class Product {
 		builder.append(", description=");
 		builder.append(description);
 		builder.append(", manufacture=");
-		builder.append(manufacture);
+		builder.append(manufacturer);
 		builder.append(", price=");
 		builder.append(price);
 		builder.append("]");
